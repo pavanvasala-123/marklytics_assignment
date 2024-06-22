@@ -1,0 +1,195 @@
+.transactions-container {
+  margin: 50px;
+  font-family: Arial, sans-serif;
+
+}
+
+.transactions-container h1 {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.transactions-table th {
+  background-color: #f2f2f2;
+}
+
+.transactions-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.transactions-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Alternate row background color */
+}
+
+.transactions-table img {
+  max-width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+
+.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description:hover {
+  overflow: visible;
+}
+
+.pagination-con {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.pagination-con button {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.search-month-con {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.search {
+  width: 400px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.select-options {
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .transactions-container {
+    margin: 20px;
+  }
+
+  .transactions-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .search-month-con {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .select-options {
+    width: 100%;
+  }
+
+  .pagination-con {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination-con button {
+    margin: 5px 0;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .transactions-container {
+    margin: 30px;
+  }
+
+  .transactions-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .search-month-con {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search {
+    width: 45%;
+  }
+
+  .select-options {
+    width: 45%;
+  }
+
+  .pagination-con {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .transactions-container {
+    margin: 50px;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .search-month-con {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search {
+    width: 400px;
+  }
+
+  .select-options {
+    width: 100px;
+  }
+
+  .pagination-con {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
